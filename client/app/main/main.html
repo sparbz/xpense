@@ -1,0 +1,27 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+<userheader></userheader>
+<div class="container" ng-show="isLoggedIn()">
+  <div class="row subnav">
+    <div class="col-lg-12">
+      <div ng-click="toggleAddLinks()" class="side-button add-button">+</div>
+      <div ng-click="showAModal()" class="sub-link add-button animate-show" ng-show="showAddLinks">Add Expense</div>
+      <div class="sub-link add-button animate-show" ng-show="showAddLinks">Add Category</div>
+      <div ng-click="toggleRemoveLinks()" class="side-button delete-button">-</div>
+      <div class="sub-link delete-button animate-show" ng-show="showRemoveLinks">Remove Expense</div>
+      <div class="sub-link delete-button animate-show" ng-show="showRemoveLinks">Remove Category</div>
+    </div>
+  </div>
+  <div class="row content-box">
+    <div class="col-lg-12">
+      <div class="content-box">
+        Test
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+      <p>xpense by <a href="http://twitter.com/sparbz">sparbz</a></p>
+  </div>
+</footer>
